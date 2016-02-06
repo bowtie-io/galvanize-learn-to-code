@@ -1,0 +1,61 @@
+---
+layout: landing
+permalink: /app/
+title: Play Roshambo
+author:
+bannerimg:
+exclude_from_nav: true
+---
+
+
+{% include nav/nav-bootstrap.html %}
+<section class="section container">
+
+
+
+<div class="row">
+<h3>Profile</h3>
+<div class="col-sm-9">
+<div class='form-group'>
+  <div id="profile" class="user-profile text-left">
+    <div class='form-group'>
+      <div class="input">
+        <label class="text">
+          <i class="fa fa-user"></i>Your Name
+        </label>
+        <input aria-required="true" class="string text form-control" id="profile_name" maxlength="255" name="profile[name]" placeholder="Jane Smith"  size="255" type="text" />
+      </div>
+    </div>
+    </form>
+    <br />
+  </div>
+</div></div>
+
+<div class="col-sm-3">
+  <ul id="scoreboard" class="list-group">
+    <li class="list-group-item text-info active text-center">
+      Scoreboard</li>
+    <li class="list-group-item">
+      <span class="plays badge"></span>
+      Plays
+    </li>
+    <li class="list-group-item">
+      <span class="wins badge"></span>
+      Wins!
+    </li>
+  </ul>
+</div>
+
+</div>
+
+<hr>
+<br>
+
+<div class="text-center">
+  <h3>Click To Play!</h3>
+  <button id="play" class="btn btn-success btn-lg play" onclick="play()">Start!</button>
+</div>
+
+</section>
+
+<script type="text/javascript" src="/js/rockPaperScissors.js"></script>

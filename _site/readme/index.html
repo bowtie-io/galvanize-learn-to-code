@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Learn-To-Code-Week-3</title>
+  <meta name="description" content="Write a description for your new BowTie site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <meta name="author" content="Your Name">
+  <meta name="generator" content="BowTie.io">
+  <link rel="alternate" type="application/rss+xml" title="Your title - BowTie.io" href="/feed.xml" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn-To-Code-Week-3 - Your title - BowTie.io</title>
+  <meta name="description" content="Write a description for your new BowTie site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Learn-To-Code-Week-3 - Your title - BowTie.io"><meta property="og:site_name" content="Your title - BowTie.io"><meta property="og:description" content="Write a description for your new BowTie site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."><meta property="og:url" content="/readme/"><meta property="article:author" content="/about/">
+
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://bowtie.io/assets/bowtie.js"></script>
+  <script type="text/javascript" src="/bowtie/api/users/info.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/theme.js"></script>
+  <script type="text/javascript" src="/js/flash.js"></script>
+  <script type="text/javascript" src="/js/authentication.js"></script>
+  <script type="text/javascript" src="/vendor/retina.js/dist/retina.js"></script>
+  <script type="text/javascript" src="/js/prospect.js"></script>
+  <script type="text/javascript" src="/js/smoothscroll.js"></script>
+
+  <link href="/css/main.css" rel="stylesheet">
+
+</head>
+
+
+  <body>
+      <div id="flash-message" style="display:none;">
+  <div class="alert alert-alert fade in" style="display:none;">
+    <button class="close" aria-hidden="true" data-dismiss="alert" type="button">
+      x&nbsp;
+
+      <span class="message">&nbsp;</span>
+    </button>
+  </div>
+
+  <div class="alert alert-notice fade in" style="display:none;">
+    <button class="close" aria-hidden="true" data-dismiss="alert" type="button">
+      x&nbsp;
+
+      <span class="message">&nbsp;</span>
+    </button>
+  </div>
+</div>
+
+      <header class="site-header">
+    <nav id="nav" class="navbar navbarfixed" role="navigation" data-spy="affix" data-offset-top="0">
+  <div id="navbarinner" class="navbar-inner">
+    <div class="navbar-header">
+    <a class="site-title navbar-brand" href="/">
+  <img style="display:inline-block;" src="/img/logo.png" alt="}">
+</a>
+
+    <!-- Brand and toggle grouped for mobile display -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle btn-transparent" data-toggle="collapse" data-target=".navbar-1-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="fa fa-bars fa-lg"></span>
+    <span>&nbsp;Menu</span>
+  </button>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse navbar-1-collapse">
+  <ul class="nav navbar-nav">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+        <!-- 'signed_in' or 'signed_out' classes hide/display elements based on user state -->
+        <!--li class="signed-out">
+          <a class="page-link" href="/users/sign_in">Sign In</a>
+        </li>
+        <li class="signed-out">
+          <a class="page-link" href="/users/sign_up">Register</a>
+        </li>
+        <li class="signed-in">
+          <a class="page-link" href="/users/sign_out">Sign Out</a>
+        </li>
+        <li class="signed-in">
+          <a class="page-link" href="/users/edit">Account</a>
+        </li-->
+  </ul>
+</div><!-- /.navbar-collapse -->
+
+    </div>
+  </div><!-- /.navbar-inner -->
+</nav><!--.navbar -->
+
+</header>
+
+      <div id="content">
+        <div class="section">
+          <div class="container wrapper">
+            <h1 id="learn-to-code-week-3">learn-to-code-week-3</h1>
+<p>During this workshop, we’ll take the Rock Paper Scissors app you made in week 2 and turn it into a hosted MVP that your friends can play!</p>
+
+<p>We’ll use frameworks to extend the application, and use BowTie for git version control, hosting, and Javascript storage.</p>
+
+<p>To get started you’ll need to complete these steps:</p>
+
+<ol>
+  <li>Sign up for a free account on BowTie</li>
+  <li>Set up your dev environment and install the BowTie client using our <a href="https://bowtie.io/docs/#quick-start">Getting Started instructions</a>. We’ve also got some tips and tricks for you <a href="https://dev.bowtie.io/galvanizeopensource/">here</a>.</li>
+  <li>Have completed the Learn To Code curriculum from Week 2. If you haven’t, <a href="https://github.com/GalvanizeOpenSource/Learn-To-Code-Week-2">go take a look</a>!</li>
+</ol>
+
+<p>If you are doing this work at home and have any questions, please contact <a href="chad@bowtie.io">Chad Person</a>.</p>
+
+<h3 id="what-well-cover">What we’ll cover</h3>
+
+<ul>
+  <li>What’s an MVP?</li>
+  <li>Putting it Online</li>
+  <li>Extending/Improving with frameworks</li>
+</ul>
+
+<h3 id="whats-an-mvp">What’s an MVP</h3>
+
+<p>Your rockPaperScissors.js is very a basic, but functional game. With a few more steps that game can become a true MVP (minimum viable product). What does that mean? Using our example: Games need players or they just sit on the shelf. So, we’re going to put a little polish on your game and put it in the world to see how <em>actual</em> players will respond to it. We can then take that feedback to further improve the game and make it more fun (useful) for even more players.</p>
+
+<p>This ‘validation’ process is essential for any game, or product. The sooner we can validate our ideas, the sooner we can stabilize development and sit back and witness the value we have created for all the happy players. The most basic functional version of the game that will inspire our players to see the ‘value’ is our MVP.</p>
+
+<p>For our MVP we’ll focus on building a couple new features in our rockPaperScissors.js, then polish up the design and host the application with <em>the least amount of work possible</em>. This is the ‘M’ in MVP. Be minimal, work smart, and use frameworks to save time.</p>
+
+<p>We’ll use <a href="http://jquery.com/">jquery</a> and <a href="http://getbootstrap.com/">Bootstrap</a> to extend our application. And, since we are building a static application, we’ll host it on <a href="https://bowtie.io">BowTie</a> and use some of the pre-baked components and templates to improve our design. We’ll also use the included <a href="http://jekyllrb.com/">Jekyll</a> framework to generate HTML pages, so we can focus on our core app.</p>
+
+<p><em>Note: I’d originally wanted to present Angular, but we won’t be doing so in the interest of time</em></p>
+
+<h3 id="set-up-your-repo">1. Set up your Repo</h3>
+
+<p>We’re going to use BowTie to host and deploy our files. They provide zero-config push-to-deploy git repos with some added features that will extend the application.</p>
+
+<ol>
+  <li>
+    <p>After setting up an account, we can build a project. Click the ‘Add Project’ button and give your repo a name. I’m calling mine ‘Roshambo’. Now choose a template. I’m using the ‘Pitch Page’ template bc I know it will work well for this example. Hit ‘Build Project’ and your repo will be created.</p>
+  </li>
+  <li>
+    <p>Clone your project using the <code class="highlighter-rouge">git clone</code> url on the dashboard.</p>
+  </li>
+  <li>
+    <p>Install the BowTie client (if you want to work locally), and run <code class="highlighter-rouge">bowtie serve</code> to prewie your files OR just open your files and get to work! Your site is already live, so you can <code class="highlighter-rouge">git push</code> to update it see your changes.</p>
+  </li>
+</ol>
+
+<h3 id="add-your-application">1. Add your application!</h3>
+
+<p>If you started with the Pitch Page template, let’s drop in your application. We’ll use ‘index.html’ for the homepage/intro, and paste the complete code from Week 2 on the ‘app.html’ page.</p>
+
+<h4 id="question">Question:</h4>
+<p>How can we clean up our app structure?</p>
+
+<p><em>Answer:</em>
+Let’s move the javascript to a <code class="highlighter-rouge">js/rockPaperScissors.js</code> and include a reference on the app page using `<script type="text/javascript" src="/js/rockPaperScissors.js"></script>!</p>
+
+<p>This let’s us separate functions in the js from the display on app.html</p>
+
+<h3 id="clean-up-and-extend-the-app">1. Clean up and extend the App</h3>
+
+<h4 id="reduce-complexity">Reduce Complexity</h4>
+
+<p>At the end of lesson two we were given a number of feature requests including addressing the player by name, and removing the compare function so that the game will play as soon as a choice is entered.</p>
+
+<p>I’d like to simplify the MVP further. We’re going to remove the play prompt on load, remove the manual compare function, and eliminate the prompt to capture a users name each time. Instead, we’ll stor the name as a universal value, and pass it to BowTie so are user can return again and again.</p>
+
+<h5 id="create-a-play-function">Create a Play Function</h5>
+
+<p>First, let’s set the game to play based on a button click. First, create a ‘play’ function that wraps the entire game just before the creation of ‘var userChoice’ and close it after the outcomes:</p>
+
+<p><code class="highlighter-rouge">function play(){</code></p>
+
+<p>Now, grab a button from the template or make one that we can use to execute our play function. My button uses bootstrap classes because they are native to BowTie. I’m also adding ‘#play’ and ‘.play’ for future targeting.</p>
+
+<p><code class="highlighter-rouge">&lt;button id="play" class="btn btn-success btn-lg play" onclick="play()"&gt;Start!&lt;/button&gt;</code></p>
+
+<h5 id="remove-compare">Remove Compare</h5>
+
+<p>Now, we can remove the compare function so the outcome is shown immediately. Remove:</p>
+
+<p><code class="highlighter-rouge">var compare = function(userChoice, computerChoice) {</code></p>
+
+<p>and the closing tag for the function. Then, reverse indent the code for readability. We can aslo remove the compare button.</p>
+
+<h5 id="store-the-name">Store the Name</h5>
+
+<p>In week 2 we created a prompt to grab the users name <code class="highlighter-rouge">var name = prompt("What's your name?");</code> and passed the name into the outcome alerts <code class="highlighter-rouge">window.alert("scissors wins" + name + "!");</code></p>
+
+<p>Let’s simplify game play by asking the user to add their name just once. We’re going to do this in two parts: 1. Set a universal variable, 2. Store that value in a bowtie.user.profile object so our user can access or update it indefinitely.</p>
+
+<p>Set a variable outside the play function:</p>
+
+<p><code class="highlighter-rouge">var profileName</code></p>
+
+<p>Now, we’ll want to store the value given with BowTie. We do that with simple function outside the play function:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$(function(){
+  bowtie.user.profile(function(profile){
+    profileName = profile.name || "";
+    // update the elements on the page
+    updateUI();
+  });
+</code></pre>
+</div>
+
+<p>I’m also adding an ‘updateUI’ function that we can use to update elements on the page, and including a binding to it:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function updateUI(){
+  $("#profile_name").val(profileName);
+}
+</code></pre>
+</div>
+
+<p>Now, we can create a fixed input to grab the name. Long term, this could be captured in a registration step or as part of a user profile page. In this MVP, we will locate the input on the page with the play button.</p>
+
+<p><code class="highlighter-rouge">
+$("#profile_name").on("change", function(){
+  profileName = $('#profile_name').val();
+  // Store the name in the Bowtie User Profile - separate function
+  bowtie.user.profile({
+    name: profileName,
+  }, function(){
+    alert("saved");
+  })
+});
+</code></p>
+
+<p>Notice I’m targeting the #profile_name ID. I’m going to grab a simple input form from a component (inlcudes/profil-form.html) and hook it to my event. I’m also using Bootstrap for the layout classes:</p>
+
+<p>```</p>
+<div class="form-group">
+  <div id="profile" class="user-profile text-left">
+    <div class="form-group">
+      <div class="input">
+        <label class="text">
+          <i class="fa fa-user"></i>Your Name
+        </label>
+        <input aria-required="true" class="string text form-control" id="profile_name" maxlength="255" name="profile[name]" placeholder="Jane Smith" size="255" type="text" />
+      </div>
+    </div>
+    
+    <br />
+  </div>
+</div>
+<p>```</p>
+
+<p>Finally, let’s use our new <code class="highlighter-rouge">profileName</code> variable in the gameplay, included as we had before:</p>
+
+<p><code class="highlighter-rouge">window.alert("The result is a tie " + profileName + "!");</code></p>
+
+<p>Now, when a visitor adds their name, we will save it to a profile, display it on the page, and can access it in the game! Cool!</p>
+
+<h3 id="add-a-scoreboard">1. Add A Scoreboard!</h3>
+
+<p>The next thing I’d like to add is a basic score board. We need to define a few new variables, count the plays and outcomes, and can use the same storage option to make the scores accessible after today’s gameplay. We’ll also need an easy way to present the scores.</p>
+
+<h5 id="step-1">Step 1</h5>
+<p>Since we’ve included bootstrap with BowTie, we can go out and find a component that will work as a scoreboard. I like the <a href="http://getbootstrap.com/components/#list-group-badges">list group badge</a>. Paste is on the page and add a few classes to target with our javascript. I’m going to set the ID to scoreboard and create a badge for Wins, and a second badge for Plays.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">```
+<span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"scoreboard"</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item text-info active text-center"</span><span class="nt">&gt;</span>
+    Scoreboard<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"plays badge"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    Plays
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"wins badge"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    Wins!
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+```</code></pre></figure>
+
+<h5 id="step-2---setup-up-the-variables">Step 2 - Setup up the variables</h5>
+
+<p>Let’s setup some variables within our loop to grab the play count and win count, then pass them to the scoreboard. Bonus: we can store your play count and win count with Bowtie js and add it to your user profile.</p>
+
+<p>Add them as universal variables like we did with the name. ‘playCount’ is my total plays, ‘userWinCount’ will count my successful outcomes:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>var profileName,
+    playCount = 0,
+    userWinCount = 0;
+</code></pre>
+</div>
+
+<h5 id="step-3---count-the-things">Step 3 - count the things</h5>
+
+<p>We’ll count the total plays ~line 18 after</p>
+
+<p><code class="highlighter-rouge">playCount += 1;</code></p>
+
+<p>Now, we need to count the outcomes by adding <code class="highlighter-rouge">userWinCount += 1;</code> after each <em>winning</em> outcome:</p>
+
+<p><code class="highlighter-rouge">
+if (userChoice  === computerChoice) {
+      window.alert("The result is a tie " + profileName + "!");
+  } else if(userChoice ==="rock") {
+    if (computerChoice==="scissors") {
+        // add win counts based on the outcomes
+        userWinCount += 1;
+        window.alert("Rock Wins "  + profileName + "!");
+  } else {
+        window.alert("Paper Wins");
+      }
+  }
+ </code></p>
+
+<h5 id="step-4---storage-and-updates">Step 4 - Storage and Updates</h5>
+
+<p>Finally, we will use the bowtie.user.profile method <em>within the play function</em> to store our play and win counts in the BowTie user profile:</p>
+
+<p>// store the scores in bowtie
+bowtie.user.profile({
+  playCount: playCount,
+  userWinCount: userWinCount
+});
+// update the elements on the page
+updateUI();</p>
+
+<p><em>Note: I’m adding the bind to updateUI</em> Now, we can use the updateUI function to to target where on the page we want to update the scores (our scoreboard):</p>
+
+<p><code class="highlighter-rouge">
+function updateUI(){
+  $("#profile_name").val(profileName);
+  $("#scoreboard span.wins").text(userWinCount);
+  $("#scoreboard span.plays").text(playCount);
+}
+</code></p>
+
+<p>Finally, we want to retrieve the scores from the bowtie profile for future sessions. We do this by calling userWinCount and playCount from the existing profile. _Note: We need to use ‘parseInt’ to identify the value as an integer when retrieved.</p>
+
+<p>```
+$(function(){
+  bowtie.user.profile(function(profile){
+    userWinCount = parseInt(profile.userWinCount || 0);
+    playCount = parseInt(profile.playCount || 0);
+    profileName = profile.name || “”;
+    // update the elements on the page
+    updateUI();</p>
+
+<p>});
+```</p>
+
+<h3 id="make-the-game-sticky">1. Make the game sticky</h3>
+
+<p>The very last feature we will add is related to presentation only. I want to make the game sticky by asking a player who has already played once to ‘Play Again?’</p>
+
+<p><strong>Question</strong> Where should the function go?</p>
+
+<p>Answer: That’s right - the updateUI function.</p>
+
+<p>Since we are now tracking play counts we can determine if the playCount is greater than 0, and if so, use a little jquery to swap our Play button text as shown here:</p>
+
+<p><code class="highlighter-rouge">
+if(playCount &gt; 0){
+  // show a play again button after playing once
+  $("#play").text("Play Again?");
+}
+</code></p>
+
+<h3 id="style-your-app">1. Style Your App!</h3>
+
+<p>Now that we have a nearly complete MVP, let’s try to quickly clean up the design and use some of the existing UI components to make the app super cool:</p>
+
+<p>BowTie builds pages with the Jekyll static site generator. Jekyll compiles HTML paritals into static pages when you build the site. Since BowTie builds on push, we can make our changes, then push to build/deploy.</p>
+
+<p><code class="highlighter-rouge">index.html</code> includes two partials we can modify, and a few pieces of ‘front matter’ - which are variables accessible in the build.</p>
+
+<p>```</p>
+<nav id="nav" class="navbar navbarfixed" role="navigation" data-spy="affix" data-offset-top="0">
+  <div id="navbarinner" class="navbar-inner">
+    <div class="navbar-header">
+    <a class="site-title navbar-brand" href="/">
+  <img style="display:inline-block;" src="/img/logo.png" alt="}" />
+</a>
+
+    <!-- Brand and toggle grouped for mobile display -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle btn-transparent" data-toggle="collapse" data-target=".navbar-1-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="fa fa-bars fa-lg"></span>
+    <span>&nbsp;Menu</span>
+  </button>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse navbar-1-collapse">
+  <ul class="nav navbar-nav">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+        <!-- 'signed_in' or 'signed_out' classes hide/display elements based on user state -->
+        <!--li class="signed-out">
+          <a class="page-link" href="/users/sign_in">Sign In</a>
+        </li>
+        <li class="signed-out">
+          <a class="page-link" href="/users/sign_up">Register</a>
+        </li>
+        <li class="signed-in">
+          <a class="page-link" href="/users/sign_out">Sign Out</a>
+        </li>
+        <li class="signed-in">
+          <a class="page-link" href="/users/edit">Account</a>
+        </li-->
+  </ul>
+</div><!-- /.navbar-collapse -->
+
+    </div>
+  </div><!-- /.navbar-inner -->
+</nav>
+<!--.navbar -->
+
+<!-- Section styles are 'section' 'section alt' 'section color' 'section black' 'section gradient' with the following helper classes for bg images 'cover' 'tile' 'parallax' 'fullscreen' -->
+<!-- Hero layout classes are 'no-image' 'image-tagline' 'image-center' 'image-left' 'image-right' -->
+
+<section id="hero" class="jumbotron section image-center">
+
+  <div class="container">
+    <div class="logo-display">
+      <img class="logo container img hidden-xs" alt="Logo" src="/img/logo-badge.png" />
+      <img class="logo container img-responsive visible-xs img" alt="Logo" src="/img/logo-badge.png" />
+      <h1 class="page-title">Roshambo!</h1>
+    </div>
+      <h1>Epic Roshambo!</h1>
+      <h2>Beat the computer in an epic game of Rock, Paper, Scissors.</h2>
+      <br />
+      <a id="app" class="btn btn-success btn-lg play" href="/app/" role="button">Begin!</a>
+  </div>
+</section>
+
+<p>```</p>
+
+<p><code class="highlighter-rouge">
+bannerimg:  /img/yourimg.png
+exclude_from_nav: true
+</code></p>
+
+<p>To add a bit of unique flair to your site - swap out the bannerimg, explore the ‘hero’ section include, modify your nav, and replace the <code class="highlighter-rouge">/img/logo.png</code> file used in the example.</p>
+
+<p>Wow! Now we are getting somewhere!</p>
+
+<p>You can see my example site at <a href="https://learntocode.bowtied.io/">learntocode.bowtied.io</a>
+Download the source on <a href="http://github.com/bowtie-io/learntocode">github</a></p>
+
+<h3 id="mit-licensedlicense"><a href="LICENSE">MIT Licensed</a></h3>
+
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <a name="connect"></a>
+  <div class="container">
+    <!-- Social links are populated by your config.yml. Add any link you need. BowTie uses fonteawesome for icons -->
+
+<div class="social-media">
+  <h5 class="title">Connect</h5>
+  <div>
+    
+    <a target="_blank" href="https://facebook.com/facebook">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <a target="_blank" href="https://twitter.com/twitter">
+      <i class="fa fa-twitter fa-2x"></i>
+    </a>
+    
+
+    
+    <a target="_blank" href="mailto:info@example.com">
+      <i class="fa fa-envelope-o fa-2x"></i>
+    </a>
+    
+
+  </div>
+</div>
+
+    <div class="subfooter">
+  <!-- remove the commented out li below if you are using our terms of svc generator, add other legal links as you see fit-->
+<nav id="legal-nav" class="legal" role="navigation">
+  <ul class="legal-links">
+    <li class="first">
+      <a class="legal-link" href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+    </li>
+      <!--li>
+      <a class="legal-link" href="/terms-of-service.html" target="_blank">Terms of Service</a>
+    </li-->
+  </ul>
+</nav>
+
+  Made with <a href="https://bowtie.io">⋈ BowTie</a>.
+</div>
+
+  </div>
+</footer>
+<span id="top-link-block" class="hidden">
+  <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</span><!-- /top-link-block -->
+
+
+
+    
+  <!-- Google Analytics (http://google.com/analytics) -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '', 'bowtie.io');
+    ga('send', 'pageview');
+  </script>
+
+ <!-- add custom tracking scripts below this line -->
+
+  </body>
+
+</html>

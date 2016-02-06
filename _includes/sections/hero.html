@@ -1,0 +1,19 @@
+<!-- Section styles are 'section' 'section alt' 'section color' 'section black' 'section gradient' with the following helper classes for bg images 'cover' 'tile' 'parallax' 'fullscreen' -->
+<!-- Hero layout classes are 'no-image' 'image-tagline' 'image-center' 'image-left' 'image-right' -->
+{% if page.bannerimg %}
+<section id="hero" class="jumbotron section image-tagline cover parallax" style="background-image:linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url({{ page.bannerimg }}) !important;">
+{% else %}
+<section id="hero" class="jumbotron section image-center">
+{% endif %}
+  <div class="container">
+    <div class="logo-display">
+      <img class="logo container img hidden-xs" alt="Logo" src="/img/logo-badge.png"></img>
+      <img class="logo container img-responsive visible-xs img" alt="Logo" src="/img/logo-badge.png"></img>
+      <h1 class="page-title">Roshambo!</h1>
+    </div>
+      <h1>Epic Roshambo!</h1>
+      <h2>Beat the computer in an epic game of Rock, Paper, Scissors.</h2>
+      <br/>
+      <a id="app" class="btn btn-success btn-lg play" href="/app/" role="button">Begin!</a>
+  </div>
+</section>
