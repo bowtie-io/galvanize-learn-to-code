@@ -1,13 +1,5 @@
----
-layout: default
-title:  Learn-To-Code-Week-3
-subtitle:  Use BowTie to host and extend your Rock, Paper, Scissors app.
-permalink: /readme/
-exclude_from_nav: true
----
-
 # learn-to-code-week-3
-During this workshop, we'll take the Rock Paper Scissors app you made in week 2 and turn it into a hosted MVP that your friends can play!
+During this workshop, we'll take the Rock Paper Scissors app you made in the [Galvanize Open Source Week 2](https://github.com/GalvanizeOpenSource/Learn-To-Code-Week-2) and turn it into a hosted MVP that your friends can play!
 
 We'll use frameworks to extend the application, and use BowTie for git version control, hosting, and Javascript storage.
 
@@ -162,7 +154,6 @@ The next thing I'd like to add is a basic score board. We need to define a few n
 ##### Step 1
 Since we've included bootstrap with BowTie, we can go out and find a component that will work as a scoreboard. I like the [list group badge](http://getbootstrap.com/components/#list-group-badges). Paste is on the page and add a few classes to target with our javascript. I'm going to set the ID to scoreboard and create a badge for Wins, and a second badge for Plays.
 
-{% highlight html %}
 ```
 <ul id="scoreboard" class="list-group">
   <li class="list-group-item text-info active text-center">
@@ -177,7 +168,6 @@ Since we've included bootstrap with BowTie, we can go out and find a component t
   </li>
 </ul>
 ```
-{% endhighlight %}
 
 ##### Step 2 - Setup up the variables
 
@@ -290,7 +280,7 @@ To add a bit of unique flair to your site - swap out the bannerimg, explore the 
 Wow! Now we are getting somewhere!
 
 You can see my example site at [learntocode.bowtied.io](https://learntocode.bowtied.io/)
-Download the source on [github](http://github.com/bowtie-io/learntocode)
+Download the source on [github](https://github.com/bowtie-io/galvanize-learn-to-code)
 
 
 
